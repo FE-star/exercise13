@@ -5,8 +5,13 @@ module.exports = class MyComponent extends Component {
     super(props)
     this.state = { list: [{ name: 'hello' }, { name: 'world' }] }
   }
+
   render() {
+      let text = '';
+      this.state.list.forEach((item,index) => {
+          text = text + `<span>${index}</span><span>${item.name}</span>`;
+      });
     // TODO
-    return null
+    return React.createElement('div',null,text);
   }        
 }

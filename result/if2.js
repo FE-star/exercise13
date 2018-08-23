@@ -7,6 +7,6 @@ module.exports = class MyComponent extends Component {
   }
   render() {
     // TODO
-    return null
+    return React.createElement('div',null,null);
   }        
 }

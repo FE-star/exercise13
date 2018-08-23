@@ -7,7 +7,8 @@ module.exports = class MyComponent extends Component {
     this.state = { flag: true }
   }
   render() {
+    let text = '<p>Hello wolrd</p><p>Hello Daniel</p>';
     // TODO
-    return null
+    return React.createElement('div',null,text);
   }        
 }
