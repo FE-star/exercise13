@@ -7,6 +7,12 @@ module.exports = class MyComponent extends Component {
   }
   render() {
     // TODO
-    return null
+    let spanDOM = this.state.list.map((ele, index) => {
+        return [
+            React.createElement('span', null, index),
+            React.createElement('span', null, ele.name)
+        ]
+    })
+    return React.createElement('div', null, spanDOM);
   }        
 }

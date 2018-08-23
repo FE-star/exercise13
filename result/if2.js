@@ -7,6 +7,10 @@ module.exports = class MyComponent extends Component {
   }
   render() {
     // TODO
-    return null
+    let pDOM = [
+        React.createElement('p', null, 'Hello wolrd'),
+        React.createElement('p', null, 'Hello Daniel')
+    ]
+    return React.createElement('div', null, this.state.flag ? pDOM : '');
   }        
 }
